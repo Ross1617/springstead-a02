@@ -15,16 +15,22 @@
  */
 import java.util.Scanner;
 public class Solution09 {
+    private static final Scanner in = new Scanner(System.in);
+    private int readInt(String prompt) {
+        System.out.println(prompt);
+        return in.nextInt();
+    }
+    private final int gallon = 350;
+    private int length;
+    private int width;
+
     public static void main(String[] args) {
-        final int gallon = 350;
-        Scanner input = new Scanner(System.in);
-        System.out.print("What is the length of the room in feet?\n");
-        int length = input.nextInt();
-        System.out.print("What is the width of the room in feet?\n");
-        int width = input.nextInt();
-        int sqFeet = width * length;
-        int paint = sqFeet / gallon;
-        int remainderCatcher = sqFeet % gallon;
+        Solution09 sol = new Solution09();
+        sol.length = sol.readInt("What is the length of the room in feet?");
+        sol.width = sol.readInt("What is the width of the room in feet?");
+        int sqFeet = sol.width * sol.length;
+        int paint = sqFeet / sol.gallon;
+        int remainderCatcher = sqFeet % sol.gallon;
         if (remainderCatcher > 0){
             paint ++;
         }

@@ -1,10 +1,9 @@
 
-N	java:S106"9Replace this use of System.out or System.err by a logger.(Ý‰®è
-N	java:S106"9Replace this use of System.out or System.err by a logger.(™†ÌÀ
-M	java:S106"9Replace this use of System.out or System.err by a logger.(Â›úF
-S	java:S106"9Replace this use of System.out or System.err by a logger.(¹îª©ýÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ÍÒ«Þúÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(§ò³õþÿÿÿÿ
 l
-java:S3457#"Q%n should be used in place of \n to produce the platform-specific line separator.(¦ãªáýÿÿÿÿ
-S	java:S106#"9Replace this use of System.out or System.err by a logger.(¦ãªáýÿÿÿÿ
+java:S1128"QRemove this unnecessary import: java.lang classes are always implicitly imported.(Š‘…ûýÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¶Û¼Íøÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¶Û¼Íøÿÿÿÿ
+N	java:S106:"9Replace this use of System.out or System.err by a logger.(ÐÖ½¿
+u
+java:S2234:"_Parameters to stringBuilder have the same names but not the same order as the method arguments.(ÐÖ½¿
+V	java:S125<"<This block of commented-out lines of code should be removed.(¸Áãüÿÿÿÿ

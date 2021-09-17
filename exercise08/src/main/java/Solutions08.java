@@ -15,18 +15,26 @@
 
 import java.util.Scanner;
 public class Solutions08 {
+    private static final Scanner in = new Scanner(System.in);
+    private int readIntInput(String prompt) {
+        System.out.println(prompt);
+        return in.nextInt();
+    }
+
+    private int people;
+    private int slices;
+    private int pizzas;
+
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.print("How many people?\n");
-        int people = input.nextInt();
-        System.out.print("How many pizzas do you have?\n");
-        int pizza = input.nextInt();
-        System.out.print("How many slices per pizza?\n");
-        int slices = input.nextInt();
-        int totalSlices = slices * pizza;
-        int slicesPerPerson = totalSlices / people;
-        int remainderSlices = totalSlices % people;
-        System.out.printf("%d people with %d pizzas (%d total slices)\n",people, pizza, totalSlices);
+        Solutions08 sol = new Solutions08();
+        sol.people = sol.readIntInput("How many people?");
+        sol.slices = sol.readIntInput("How many pizzas do you have?");
+        sol.pizzas = sol.readIntInput("How many slices per pizza?");
+
+        int totalSlices = sol.slices * sol.pizzas;
+        int slicesPerPerson = totalSlices / sol.people;
+        int remainderSlices = totalSlices % sol.people;
+        System.out.printf("%d people with %d pizzas (%d total slices)\n",sol.people, sol.pizzas, totalSlices);
         System.out.printf("Each person will get %d slices of pizza\n",slicesPerPerson);
         System.out.printf("And there will be %d leftover slices", remainderSlices);
 

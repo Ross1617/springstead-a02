@@ -13,23 +13,29 @@
 import java.util.Scanner;
 import java.lang.Math;
 public class Solution13 {
+    private static final Scanner in = new Scanner(System.in);
+    private String readInput(String prompt) {
+        System.out.println(prompt);
+        return in.nextLine();
+    }
+    private int principle;
+    private double rate;
+    private  int years;
+    private  int number;
+
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.printf("Enter the principal: ");
-        int principle = input.nextInt();
-        System.out.printf("What is the rate of interest (in a percentage): ");
-        double rate = input.nextDouble();
-        System.out.printf("Enter the number of years: ");
-        int years = input.nextInt();
-        System.out.printf("Enter the number of times the interest is compounded per year: ");
-        int number = input.nextInt();
-        double calculatedRate = rate /100;
-        double value = principle* Math.pow((1 + (calculatedRate/number)), (number* years));
+        Solution13 sol = new Solution13();
+        sol.principle =  Integer.valueOf(sol.readInput("Enter the principal: "));
+        sol.rate = Double.valueOf(sol.readInput("What is the rate of interest (in a percentage):"));
+        sol.years = Integer.valueOf(sol.readInput("Enter the number of years: "));
+        sol.number = Integer.valueOf(sol.readInput("Enter the number of times the interest is compounded per year: "));
+        double calculatedRate = sol.rate /100;
+        double value = sol.principle* Math.pow((1 + (calculatedRate/sol.number)), (sol.number* sol.years));
         value = value*100;
         value  = Math.ceil(value);
         value = value /100;
-        System.out.printf("%d invested at %.2f%% for %d years compounded %d times per year is $%.2f.", principle, rate,years, number, value);
+        System.out.printf("%d invested at %.2f%% for %d years compounded %d times per year is $%.2f.", sol.principle, sol.rate,sol.years, sol.number, value);
 
     }
 }

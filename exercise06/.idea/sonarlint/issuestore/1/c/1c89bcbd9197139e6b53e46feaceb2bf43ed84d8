@@ -1,7 +1,11 @@
 
-S	java:S106"9Replace this use of System.out or System.err by a logger.(å¨…ÿùÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(ŒŸÿç
-N	java:S106"9Replace this use of System.out or System.err by a logger.(—ŸŠ
-Z	java:S106!"9Replace this use of System.out or System.err by a logger.(İÚ™€úÿÿÿÿ8é·ªŞ¾/
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õ´•åúÿÿÿÿ8´ ¢Ş¾/
-l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à‹18¿Ş¢Ş¾/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¶Û¼Íøÿÿÿÿ
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(å¨…ÿùÿÿÿÿ
+\
+java:S3457&"AFormat specifiers should be used instead of string concatenation.(†¶‚ÿÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(†¶‚ÿÿÿÿÿ
+\
+java:S3457("AFormat specifiers should be used instead of string concatenation.(‡şšèÿÿÿÿÿ
+S	java:S106("9Replace this use of System.out or System.err by a logger.(‡şšèÿÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õ´•åúÿÿÿÿ
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à‹1

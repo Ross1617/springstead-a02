@@ -15,16 +15,24 @@
 
 import java.util.Scanner;
 public class Solutions07 {
+    private static final Scanner in = new Scanner(System.in);
+    private int readDimension(String prompt) {
+        System.out.println(prompt);
+        return in.nextInt();
+    }
+    private int length;
+    private int width;
+    private final double squaredMeter = 0.09290304;
+
     public static void main(String[] args) {
-        final double squaredMeter = 0.09290304;
-        Scanner input = new Scanner(System.in);
-        System.out.print("What is the length of the room in feet?\n");
-        int length = input.nextInt();
-        System.out.print("What is the width of the room in feet?\n");
-        int width = input.nextInt();
-        System.out.printf("You entered the dimensions of %d feet and %d feet\n",length, width);
-        int feet = width * length;
-        double meter = feet * squaredMeter;
+
+        Solutions07 sol = new Solutions07();
+        sol.length = sol.readDimension("What is the length of the room in feet?");
+        sol.width = sol.readDimension("What is the width of the room in feet?");
+
+        System.out.printf("You entered the dimensions of %d feet and %d feet\n",sol.length, sol.width);
+        int feet = sol.width * sol.length;
+        double meter = feet * sol.squaredMeter;
         System.out.printf("The area is \n%d squared feet\n",feet);
         System.out.printf("%.3f squared meters",meter);
     }

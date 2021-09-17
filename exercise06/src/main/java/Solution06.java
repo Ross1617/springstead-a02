@@ -17,20 +17,27 @@ import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Solution06 {
+    private static final Scanner in = new Scanner(System.in);
+    private int readIntInput(String prompt) {
+        System.out.println(prompt);
+        return in.nextInt();
+    }
+    private int age;
+    private int retire;
 
     public static void main(String[] args) {
+        Solution06 sol = new Solution06();
         LocalDate current_date = LocalDate.now();
         int current_Year = current_date.getYear();
 
-        Scanner input = new Scanner(System.in);
+        sol.age = sol.readIntInput("What is your current age? ");
+        sol.retire = sol.readIntInput("What age do you wish to retire? ");
         System.out.print("What is your current age?\n");
-        int age = input.nextInt();
-        System.out.print("What age do you wish to retire?\n");
-        int retire = input.nextInt();
-        int yearsToRetire = retire - age;
-        System.out.print("You have " + yearsToRetire + " years left until you can retire\n");
+
+        int yearsToRetire = sol.retire - sol.age;
+        System.out.printf("You have " + yearsToRetire + " years left until you can retire\n");
         int retireYear = current_Year + yearsToRetire;
-        System.out.print("The current year is " + current_Year + " and you can retire in " + retireYear +"\n");
+        System.out.printf("The current year is " + current_Year + " and you can retire in " + retireYear +"\n");
 
 
     }

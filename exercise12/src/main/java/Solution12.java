@@ -13,19 +13,27 @@
 import java.util.Scanner;
 import java.lang.Math;
 public class Solution12 {
+    private static final Scanner in = new Scanner(System.in);
+    private String readInput(String prompt) {
+        System.out.println(prompt);
+        return in.nextLine();
+    }
+    private int principle;
+    private double rate;
+    private  int years;
+
+
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.printf("Enter the principal: ");
-        int principle = input.nextInt();
-        System.out.printf("What is the rate of interest (in a percentage): ");
-        double rate = input.nextDouble();
-        System.out.printf("Enter the number of years: ");
-        int years = input.nextInt();
-        double calculatedRate = rate /100;
-        double value = principle* (1 + calculatedRate * years);
+        Solution12 sol = new Solution12();
+        sol.principle =  Integer.valueOf(sol.readInput("Enter the principal: "));
+        sol.rate = Double.valueOf(sol.readInput("What is the rate of interest (in a percentage):"));
+        sol.years = Integer.valueOf(sol.readInput("Enter the number of years: "));
+
+        double calculatedRate = sol.rate /100;
+        double value = sol.principle* (1 + calculatedRate * sol.years);
         value = value*100;
         value  = Math.ceil(value);
         value = value /100;
-        System.out.printf("After %d years at %.2f%%, the investment will be worth $%.2f.", years, rate, value);
+        System.out.printf("After %d years at %.2f%%, the investment will be worth $%.2f.", sol.years, sol.rate, value);
     }
 }
