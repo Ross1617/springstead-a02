@@ -1,0 +1,18 @@
+
+b	java:S116 "NRename this field "BMI" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß¬™w
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¶Û¼Íøÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(È» ğşÿÿÿÿ
+n
+java:S3457+"Q%n should be used in place of \n to produce the platform-specific line separator.(©ª¨¿8‡±¦ß¿/
+N	java:S106+"9Replace this use of System.out or System.err by a logger.(©ª¨¿
+@
+java:S3457-"%String contains no format specifiers.(‰Ç¶ûùÿÿÿÿ
+S	java:S106-"9Replace this use of System.out or System.err by a logger.(‰Ç¶ûùÿÿÿÿ
+@
+java:S34570"%String contains no format specifiers.(İ½¶ƒıÿÿÿÿ
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(İ½¶ƒıÿÿÿÿ
+@
+java:S34573"%String contains no format specifiers.(Ö‡º™şÿÿÿÿ
+Z	java:S1063"9Replace this use of System.out or System.err by a logger.(Ö‡º™şÿÿÿÿ8ˆ±¦ß¿/
+y
+java:S1488""^Immediately return this expression instead of assigning it to the temporary variable "holder".(÷¬îûÿÿÿÿ

@@ -1,0 +1,16 @@
+
+7
+java:S1170"!Make this final field static too.(ıÏÃÀ
+7
+java:S1170"!Make this final field static too.(Ğç¼Î
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¶Û¼Íøÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‚´›øÿÿÿÿ
+l
+java:S34574"Q%n should be used in place of \n to produce the platform-specific line separator.(Ö÷ô–úÿÿÿÿ
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(Ö÷ô–úÿÿÿÿ
+;
+java:S34576"%String contains no format specifiers.(Ú°Ôš
+N	java:S1066"9Replace this use of System.out or System.err by a logger.(Ú°Ôš
+;
+java:S34579"%String contains no format specifiers.(²§ÄĞ
+N	java:S1069"9Replace this use of System.out or System.err by a logger.(²§ÄĞ
