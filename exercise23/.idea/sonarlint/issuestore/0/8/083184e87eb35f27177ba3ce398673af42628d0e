@@ -1,0 +1,10 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¶Û¼Íøÿÿÿÿ
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(½´ãüÿÿÿÿ
+l
+java:S3457;"Q%n should be used in place of \n to produce the platform-specific line separator.(´Ú‚áşÿÿÿÿ
+@
+java:S3457;"%String contains no format specifiers.(´Ú‚áşÿÿÿÿ
+S	java:S106;"9Replace this use of System.out or System.err by a logger.(´Ú‚áşÿÿÿÿ
+S	java:S106<"9Replace this use of System.out or System.err by a logger.(×°»íúÿÿÿÿ
